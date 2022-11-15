@@ -23,7 +23,7 @@ export default FnB;
 
 const StyledDiv = styled.div`
 width: 400px;
-height: 350px;
+height: 380px;
 padding: 10px 20px;
 margin-bottom: 50px;
 
@@ -40,7 +40,7 @@ text-align: center;
 
 const StyledP = styled.p`
 text-align: center;
-font-size: 14px;
+font-size: 16px;
 `;
 
 const Styledimg = styled.img`
