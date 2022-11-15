@@ -13,9 +13,11 @@ interface Props {
 const Restrorant = ({title, review, address, imgSrc, mapSrc}: Props) => {
     return(
         <Styledsection>
-            <StyledA href={mapSrc} target="_blank">
-                <StyledImg src={imgSrc} alt={title} />
-            </StyledA>
+            <StyledTle>
+                <StyledA href={mapSrc} target="_blank">
+                    <StyledImg src={imgSrc} alt={title} />
+                </StyledA>
+            </StyledTle>
             <StyledDiv>
                 <StyledH2>{title}</StyledH2>
                 <StyledAddress>{address}</StyledAddress>
@@ -40,22 +42,28 @@ const Styledsection = styled.section`
     flex-direction: column;
     justify-content: space-between;
 `;
+const StyledTle = styled.div`
+    width: 300px;
+    height: 300px;
+
+    overflow: hidden;
+`;
 
 const StyledA= styled.a`
     background-color: #FFD57E;;
-
-    transition: all 0.3s;
-    &:hover{
-        transform: scale(1.05);
-        overflow: hidden;
-        transition: all 0.3s;
-    }
 `;
 
 const StyledImg = styled.img`
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
+
+
+    transition: all 0.7s;
+    &:hover{
+        transform: scale(1.3);
+
+    }
 `;
 
 const StyledDiv = styled.div`
