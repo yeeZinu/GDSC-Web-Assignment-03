@@ -59,7 +59,6 @@ function App() {
 export default App;
 
 const StyledMain = styled.main`
-  background-color: #FFEFA0;
 
 `;
 
