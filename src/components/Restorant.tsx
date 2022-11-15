@@ -42,11 +42,11 @@ const Styledsection = styled.section`
 `;
 
 const StyledA= styled.a`
-    transition: all 0.3ms;
+    transition: all 0.3s;
     &:hover{
         transform: scale(1.05);
         overflow: hidden;
-        transition: all 0.3ms;
+        transition: all 0.3s;
     }
 `;
 
