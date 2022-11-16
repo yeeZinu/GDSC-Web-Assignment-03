@@ -1,6 +1,7 @@
 import './index.css';
 import Restrorant from './components/Restorant';
 import styled from 'styled-components';
+import React from 'react';
 
 function App() {
 
