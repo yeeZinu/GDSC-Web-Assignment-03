@@ -5,7 +5,7 @@ const Cafe = () => {
     <>
       <Store
         name="🍽️ 블루보틀"
-        location="⛳️ 어디든"
+        location="⛳️ 서울 방방곳곳"
         introduction="놀라플로트 맛있음!"
         imgSrc="cafe.jpeg"
       />
