@@ -5,7 +5,7 @@ import Jap from "../components/Jap";
 import Korean from "../components/Korean";
 import Cafe from "../components/Cafe";
 
-const Sidebar = () => {
+const Main = () => {
   const [cov, setCov] = useState<boolean>(false);
   const [cov2, setCov2] = useState<boolean>(false);
   const [cov3, setCov3] = useState<boolean>(false);
@@ -50,7 +50,7 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Main;
 
 const StyledSection = styled.section`
   display: flex;
