@@ -6,45 +6,29 @@ import Korean from "../components/Korean";
 import Cafe from "../components/Cafe";
 
 const Main = () => {
-  const [cov, setCov] = useState<boolean>(false);
-  const [cov2, setCov2] = useState<boolean>(false);
-  const [cov3, setCov3] = useState<boolean>(false);
+  const [list, SetList] = useState<string>("1");
 
-  const onClickHandler = () => {
-    if (cov2 === true || cov3 === true) {
-      setCov2(false);
-      setCov3(false);
-    }
-    setCov(!cov);
-  };
-
-  const onClickHandler2 = () => {
-    if (cov === true || cov3 === true) {
-      setCov(false);
-      setCov3(false);
-    }
-    setCov2(!cov2);
-  };
-
-  const onClickHandler3 = () => {
-    if (cov === true || cov2 === true) {
-      setCov(false);
-      setCov2(false);
-    }
-    setCov3(!cov3);
+  const getMenu = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    SetList(e.currentTarget.value);
   };
 
   return (
     <StyledSection>
       <StyledSideBar>
-        <StyledBtn onClick={onClickHandler}>•일식</StyledBtn>
-        <StyledBtn onClick={onClickHandler2}>•한식</StyledBtn>
-        <StyledBtn onClick={onClickHandler3}>•카페</StyledBtn>
+        <StyledBtn value="1" onClick={getMenu}>
+          •일식
+        </StyledBtn>
+        <StyledBtn value="2" onClick={getMenu}>
+          •한식
+        </StyledBtn>
+        <StyledBtn value="3" onClick={getMenu}>
+          •카페
+        </StyledBtn>
       </StyledSideBar>
       <article>
-        {cov === true ? <Jap /> : null}
-        {cov2 === true ? <Korean /> : null}
-        {cov3 === true ? <Cafe /> : null}
+        {list === "1" && <Jap />}
+        {list === "2" && <Korean />}
+        {list === "3" && <Cafe />}
       </article>
     </StyledSection>
   );
