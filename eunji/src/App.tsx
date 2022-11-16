@@ -10,11 +10,11 @@ function App() {
     <Container>
       <Introduce />
       <StyledDiv>
-        <FnB name="교다이야" location="합정" img="fnb1.jpg" menu="가케우동정식(\13,000)" review="https://www.siksinhot.com/P/365707"></FnB>
+        <FnB name="교다이야" location="합정" img="fnb1.jpg" menu="가케우동정식(\13,000)" review="https://www.siksinhot.com/P/365707" />
         <Description1 />
       </StyledDiv>
       <StyledDiv>
-        <FnB name="훈닭포차" location="까치산" img="fnb2.jpg" menu="숯불바베큐치킨(\32,000)" review="https://www.siksinhot.com/P/868189"></FnB>
+        <FnB name="훈닭포차" location="까치산" img="fnb2.jpg" menu="숯불바베큐치킨(\32,000)" review="https://www.siksinhot.com/P/868189" />
         <Description2 />
       </StyledDiv>
     </Container>

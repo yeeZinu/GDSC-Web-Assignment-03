@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 interface Props {
-    name: String;
-    location: String;
-    img: String;
-    menu: String;
-    review: String;
+    name: string;
+    location: string;
+    img: string;
+    menu: string;
+    review: string;
 }
 
 const FnB = ({ name, location, img, menu, review }: Props) => {
